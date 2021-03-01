@@ -45,7 +45,7 @@ List MFDFA(const NumericVector tsx, const IntegerVector scale, const int m, cons
 
   }
 
-  double log2 = log(2);
+  double log2 = log(2.0);
 
   for(int nq=0; nq<q.size(); nq++)
   {
