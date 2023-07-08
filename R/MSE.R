@@ -14,6 +14,7 @@
 #'
 #' @return  A data frame with with one row for each combination of 'tau', 'm' and 'rSD'. Columns are "tau", "m", "rSD", and "SampEn" (the calculated sample entropy).
 #' The data frame will also have an attribute "SD", the standard deviation of 'x'. rSD = r*sd(y)
+#' @references Zhang T, Dong X, Chen C, Wang D, Zhang XD. RespirAnalyzer: an R package for continuous monitoring of respiratory signals.
 #'
 #' @examples data("TestData") # load Data from TestData dataset
 #' oldoptions <- options(scipen=999)

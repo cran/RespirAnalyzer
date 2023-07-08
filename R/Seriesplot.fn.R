@@ -20,6 +20,7 @@
 #' @param main main title for the picture.
 #'
 #' @return No value return
+#' @references Zhang T, Dong X, Chen C, Wang D, Zhang XD. RespirAnalyzer: an R package for continuous monitoring of respiratory signals.
 #'
 #' @examples data("TestData")
 #' oldpar <- par(mfrow=c(1,2))

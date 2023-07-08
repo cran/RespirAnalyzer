@@ -72,3 +72,6 @@ Seriesplot.fn(1:length(PP_interval),PP_interval,points=FALSE,xlab="Count",ylab="
 par(oldpar)
 
 }
+\references{
+Zhang T, Dong X, Chen C, Wang D, Zhang XD. RespirAnalyzer: an R package for continuous monitoring of respiratory signals.
+}

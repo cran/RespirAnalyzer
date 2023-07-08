@@ -82,3 +82,6 @@ Groupplot.fn (q[11:21],Result_mean_mat[11:21,],Class,errorbar = Result_sd_mat[11
               cex.legend = 1, xlab="q",ylab="Hurst exponent",main = "")
 
 }
+\references{
+Zhang T, Dong X, Chen C, Wang D, Zhang XD. RespirAnalyzer: an R package for continuous monitoring of respiratory signals.
+}

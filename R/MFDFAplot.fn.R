@@ -19,6 +19,7 @@
 #' @param cex.legend the size of the legend text with a numeric value of length 1.The default value is 1.
 #'
 #' @return  No value returned
+#' @references Zhang T, Dong X, Chen C, Wang D, Zhang XD. RespirAnalyzer: an R package for continuous monitoring of respiratory signals.
 #'
 #' @examples data("TestData")
 #' Fs=50 ## sampling frequency is 50Hz
@@ -45,11 +46,11 @@ MFDFAplot.fn <- function(Result,scale,q,cex.lab=1.6,cex.axis=1.6, col.points=1,
     Model$Dq <- q[1:(length(q)-1)]*Model$hq - Model$tau_q[1:(length(q)-1)]
   }
 
-  layout(matrix(c(1,2,3,4), 2, 2, byrow = TRUE),heights=c(4, 4))
-  oldpar <- par(no.readonly = TRUE)
-  on.exit(par(oldpar))
+  # layout(matrix(c(1,2,3,4), 2, 2, byrow = TRUE),heights=c(4, 4))
+  # oldpar <- par(no.readonly = TRUE)
+  # on.exit(par(oldpar))
   ## 1st plot: Scaling function order Fq (q-order RMS)
-  par(mai=c(0.8,1,0.8,0.4))
+  # par(mai=c(0.8,1,0.8,0.4))
   xRange <- range(log2(scale))
   yRange <- range(log2(Result$Fqi))
   plot(xRange, yRange, type = "n", axes = FALSE, xlab = expression('log'[2]*'(Scale)'),
@@ -68,7 +69,7 @@ MFDFAplot.fn <- function(Result,scale,q,cex.lab=1.6,cex.axis=1.6, col.points=1,
          lwd=c(lwd,lwd,lwd),pch=c(pch,pch,pch),bty="n", col=col.points:(col.points+2))
 
   ## 2nd plot: q-order Hurst exponent
-  par(mai=c(0.8,1,0.8,0.4))
+  # par(mai=c(0.8,1,0.8,0.4))
   plot(q, Result$Hq, col=col.points, axes= F, ylab=expression('h'[q]), pch=pch, cex.lab=cex.lab,
        cex.axis=cex.axis, main="Hurst exponent", ylim=range(Result$Hq))
   if(model){
@@ -81,7 +82,7 @@ MFDFAplot.fn <- function(Result,scale,q,cex.lab=1.6,cex.axis=1.6, col.points=1,
   box()
 
   ## 3rd plot: q-order Mass exponent
-  par(mai=c(0.8,1,0.8,0.4))
+  # par(mai=c(0.8,1,0.8,0.4))
   plot(q, Result$tau_q, col=col.points, axes=F,cex.lab=cex.lab, cex.axis=cex.axis,
        main="Mass exponent",pch=16,ylab=expression(tau[q]))
   # grid(col="midnightblue")
@@ -95,7 +96,7 @@ MFDFAplot.fn <- function(Result,scale,q,cex.lab=1.6,cex.axis=1.6, col.points=1,
   box()
 
   ## 4th plot: Multifractal spectrum
-  par(mai=c(0.8,1,0.8,0.4))
+  # par(mai=c(0.8,1,0.8,0.4))
   plot(Result$hq, Result$Dq, col=col.points, axes=F, pch=16,
        main="Multifractal spectrum",ylab=bquote("f ("~alpha~")"),
        cex.lab=cex.lab,cex.axis=cex.axis,xlab=bquote(~alpha))

@@ -12,7 +12,7 @@
 #' @param threshold an optional value. A threshold is the minimum height difference between the wave crest and wave trough. The default value is 0.2.
 #'
 #' @return a dataframe for the information of peaks. "PeakIndex" is the position of the peaks and "PeakHeight" is the height of the peaks
-#'
+#' @references Zhang T, Dong X, Chen C, Wang D, Zhang XD. RespirAnalyzer: an R package for continuous monitoring of respiratory signals.
 #'
 #' @examples data("TestData") # load Data from TestData dataset
 #' Fs=50 ## sampling frequency is 50Hz

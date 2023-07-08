@@ -47,3 +47,6 @@ Peaks
 
 
 }
+\references{
+Zhang T, Dong X, Chen C, Wang D, Zhang XD. RespirAnalyzer: an R package for continuous monitoring of respiratory signals.
+}

@@ -11,6 +11,7 @@
   #' @return  a dataframe for the statistics for each Group. Number of Samples, mean
   #' @return  standard deviation (SD), median,  upper and lower bounds of CI, p-value of ANOVA
   #'
+  #' @references Zhang T, Dong X, Chen C, Wang D, Zhang XD. RespirAnalyzer: an R package for continuous monitoring of respiratory signals.
   #' @examples data("HqData")
   #' PP_Hq <- HqData
   #' filenames <- row.names(PP_Hq)

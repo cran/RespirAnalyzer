@@ -66,3 +66,6 @@ legend("topright", legend=paste0(Class, "(N=", table( ClassNames ), ")"),
       col=1:4, cex=1, lty=1, pch=16)
 
 }
+\references{
+Zhang T, Dong X, Chen C, Wang D, Zhang XD. RespirAnalyzer: an R package for continuous monitoring of respiratory signals.
+}

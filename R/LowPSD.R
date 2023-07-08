@@ -7,6 +7,7 @@
 #' @param min,max the optional values. Frequency range of power spectral density. The default value is 1/2 and 1/8 and cannot be set to a negative number
 #'
 #' @return a value of spectral exponent(beta) which the the slope of the  of the fitting line on plot of log power vs. log frequency
+#' @references Zhang T, Dong X, Chen C, Wang D, Zhang XD. RespirAnalyzer: an R package for continuous monitoring of respiratory signals.
 #'
 #' @examples data("TestData")
 #' Fs <- 50
@@ -37,7 +38,8 @@ LowPSD <- function(series,plot=TRUE,min=1/8, max=1/2){
   fit<-lm(y~x)
   if(plot){
     plot(x,y,"l",
-         xlab="log10(frequency)",ylab="log10(power)")
+         xlab="log10(frequency)",ylab="log10(power)", axes=FALSE,cex.lab=1.6)
+    axis(1); axis(2, las=2); box()
     cor(x,y)
     abline(fit)
   }

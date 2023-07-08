@@ -28,3 +28,6 @@ PP_interval=diff(Peaks[,1])/Fs
 LowPSD(series=PP_interval,plot=TRUE,min=1/64, max=1/2)
 
 }
+\references{
+Zhang T, Dong X, Chen C, Wang D, Zhang XD. RespirAnalyzer: an R package for continuous monitoring of respiratory signals.
+}

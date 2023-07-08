@@ -36,3 +36,6 @@ Data <- GroupComparison.fn(PP_Hq[,1],ClassNames)
 Data
 
 }
+\references{
+Zhang T, Dong X, Chen C, Wang D, Zhang XD. RespirAnalyzer: an R package for continuous monitoring of respiratory signals.
+}

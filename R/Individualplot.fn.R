@@ -16,6 +16,7 @@
 #' @param main main title for the picture.
 #'
 #' @return No value returned
+#' @references Zhang T, Dong X, Chen C, Wang D, Zhang XD. RespirAnalyzer: an R package for continuous monitoring of respiratory signals.
 #'
 #' @examples data("HqData")
 #' PP_Hq <- HqData
@@ -47,9 +48,9 @@ Individualplot.fn <- function(x,y, Name = NA, xRange = NA, yRange = NA,
   if (is.na(yRange[1]))
     yRange <- range(y)
 
-  plot(xRange, yRange, type = "n", axes = FALSE, xlab = xlab, ylab = ylab)
+  plot(xRange, yRange, type = "n", axes = FALSE, xlab = xlab, ylab = ylab, cex.lab=1.6)
   axis(1)
-  axis(2)
+  axis(2, las=2)
   box()
 
   for (i in 1:N){

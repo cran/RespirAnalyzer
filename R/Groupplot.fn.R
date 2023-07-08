@@ -18,6 +18,7 @@
 #' @param  main main title for the plot
 #'
 #' @return No value returned
+#' @references Zhang T, Dong X, Chen C, Wang D, Zhang XD. RespirAnalyzer: an R package for continuous monitoring of respiratory signals.
 #'
 #' @examples data("HqData")
 #' PP_Hq <- HqData
@@ -60,9 +61,9 @@ Groupplot.fn <- function(x,Average,GroupName,errorbar = NA,xRange = NA,
     pch <- 1:N_Group
   if (is.na(yRange[1]))
     yRange <- range(Average)
-  plot(xRange, yRange, type = "n", axes = FALSE, xlab = xlab, ylab = ylab)
+  plot(xRange, yRange, type = "n", axes = FALSE, xlab = xlab, ylab = ylab, cex.lab=1.6)
   axis(1)
-  axis(2)
+  axis(2, las=2)
   box()
 
   for (i in 1:N_Group) {

@@ -67,3 +67,6 @@ Result <- MFDFA(PP_interval, scale, m, q)
 MFDFAplot.fn(Result,scale,q)
 
 }
+\references{
+Zhang T, Dong X, Chen C, Wang D, Zhang XD. RespirAnalyzer: an R package for continuous monitoring of respiratory signals.
+}

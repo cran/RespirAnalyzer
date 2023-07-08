@@ -16,7 +16,9 @@ The R package RespirAnalyzer contains functions for analyzing respiratory data.
 
 Maintainer: \packageMaintainer{RespirAnalyzer}
 }
-
+\references{
+Zhang T, Dong X, Chen C, Wang D, Zhang XD. RespirAnalyzer: an R package for continuous monitoring of respiratory signals.
+}
 \keyword{ package }
 
 

@@ -24,6 +24,9 @@ A list of the following elements:
 \description{
 Applies the MultiFractal Detrended Fluctuation Analysis (MFDFA) to time series.
 }
+\references{
+Zhang T, Dong X, Chen C, Wang D, Zhang XD. RespirAnalyzer: an R package for continuous monitoring of respiratory signals.
+}
 \examples{
 data("TestData") # load Data from TestData dataset
 Fs <- 50

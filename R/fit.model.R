@@ -8,6 +8,7 @@
 #'
 #' @return  a vector for fitting parameters."a" and "b" is the coefficients of the extended binomial multifractal model.
 #' "Goodness" is the goodness of fit
+#' @references Zhang T, Dong X, Chen C, Wang D, Zhang XD. RespirAnalyzer: an R package for continuous monitoring of respiratory signals.
 #'
 #' @examples data("TestData") # load Data from TestData dataset
 #' Fs=50 ## sampling frequency is 50Hz

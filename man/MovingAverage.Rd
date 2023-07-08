@@ -22,3 +22,6 @@ data("TestData")
 W <- 50
 y <- MovingAverage(Data[,2],W)
 }
+\references{
+Zhang T, Dong X, Chen C, Wang D, Zhang XD. RespirAnalyzer: an R package for continuous monitoring of respiratory signals.
+}

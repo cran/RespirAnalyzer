@@ -6,6 +6,7 @@
 #' @param W a Positive integer, the windows of Moving Average.
 #'
 #' @return A new numeric vector after calculate the moving average.
+#' @references Zhang T, Dong X, Chen C, Wang D, Zhang XD. RespirAnalyzer: an R package for continuous monitoring of respiratory signals.
 #'
 #' @examples data("TestData")
 #' W <- 50
